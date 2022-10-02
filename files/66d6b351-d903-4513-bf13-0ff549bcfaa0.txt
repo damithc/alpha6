@@ -1,0 +1,2627 @@
+
+==================================================================[[rootkie]]
+    /**
+     * Update current active item displayed to an Ingredient.
+     */
+....................
+    /**
+     * Update current active item displayed to a Recipe.
+     */
+....................
+    /**
+     * Clear the active window.
+     */
+....................
+    /**
+     * Change the selected item to a target {@code Ingredient}.
+     */
+....................
+    /**
+     * Initialize all the stateful components
+     */
+....................
+    /**
+     * Change the selected item to a target {@code Recipe}.
+     */
+....................
+    /**
+     * Modify active recipe to editedRecipe if target {@code Recipe} is the same as the current activeRecipe.
+     */
+....................
+    /**
+     * Modify active ingredient to editedIngredient if target {@code Ingredient}
+     * is the same as the current activeIngredient.
+     */
+....................
+    /**
+     * Delete active ingredient if it is the same as the target.
+     */
+....................
+    /**
+     * Delete active recipe if it is the same as the target.
+     */
+....................
+    /**
+     * Set a recipe as active, erase current activeRecipe.
+     */
+....................
+    /**
+     * Set a recipe as active, erase current activeIngredient.
+     */
+....................
+    /**
+     * Set a recipe as active, erase current activeRecipe. Inform MainWindow of change.
+     */
+....................
+    /**
+     * Set a recipe as active, erase current activeIngredient. Inform MainWindow of change.
+     */
+....................
+    /**
+     * Resend {@code ActiveItemChangeEvent}. To be used after a filtered list change as
+     * old selected objects are destroyed, this will reselect them.
+     */
+....................
+    /**
+     * Switch to a target tab programmatically.
+     * @param tab the tab to switch to.
+     */
+....................
+    /**
+     * Transform a list of objects into a pretty print numbered output using
+     * their toString methods.
+     */
+
+==================================================================[[Li-Lehao]]
+    /**
+     * Add the current state into the history states.
+     */
+....................
+    /**
+     * Initialized a {@Code HistoryStates}.
+     */
+....................
+    /**
+     * Add a given {@Code State} to this {@Code HistoryStates}.
+     * @param state The given state to add.
+     */
+....................
+    /**
+     * Remove the last {@Code State} in the {@Code HistoryStates} and go back to the previous {@Code State}.
+     * Exception will be thrown if this {@Code HistoryStates} does not contain any {@Code State}.
+     * @throws NoHistoryStatesException Exception will be thrown if
+     * this {@Code HistoryStates} does not contain any {@Code State}.
+     */
+....................
+    /**
+     * Get the last {@Code State} in the {@Code HistoryStates}. Exception will be thrown if
+     * this {@Code HistoryStates} does not contain any {@Code State}.
+     * @return The last {@Code State} in the {@Code HistoryStates}.
+     * @throws NoHistoryStatesException Exception will be thrown if
+     * this {@Code HistoryStates} does not contain any {@Code State}.
+     */
+....................
+    /**
+     * Check whether there are at least one previous {@Code State} in the {@Code HistoryStates}.
+     * @return A boolean value, indicating whether there are {@Code State} in the {@Code HistoryStates}.
+     */
+....................
+    /**
+     * Get the {@Code Schedule} of this state.
+     * @return A deep copy of the {@Code Schedule} of this state.
+     */
+....................
+    /**
+     * Remove a given person from the client list of this {@code Appointment}.
+     * @param personToRemove the given person to be removed.
+     */
+....................
+    /**
+     * Add a given person to the client list of this {@Code Appointment}.
+     * @param personToAdd the given person to be added.
+     */
+....................
+    /**
+     * A boolean method to check whether a moment is included in this {@code TimePeriod}.
+     * @param moment A LocalDateTime, the given moment.
+     * @return A boolean value indicating whether the moment is included.
+     */
+....................
+    /**
+     * A boolean method to check whether this {@code TimePeriod} has conflict with another {@code TimePeriod}.
+     * @param tp Another {@code TimePeriod}.
+     * @return A boolean value indicating whether the two {@TimePeriod} has conflicts.
+     */
+....................
+    /**
+     * Set the {@Code TimePeriod}'s start date and time to the given date and time,
+     * exception will be thrown if the given start date and time is after the end date
+     * and time of the {@Code TimePeriod}.
+     * @param newStartDateTime The given start date and time.
+     * @throws EndTimeBeforeStartTimeException Exception will be thrown
+     * if the given start date and time is after the end date and time of the {@Code TimePeriod}.
+     */
+....................
+    /**
+     * Set the {@Code TimePeriod}'s end date and time to the given date and time,
+     * exception will be thrown if the given end date and time is before the start date
+     * and time of the {@Code TimePeriod}.
+     * @param newEndDateTime The given end date and time.
+     * @throws EndTimeBeforeStartTimeException Exception will be thrown
+     * if the given end date and time is before the start date and time of the {@Code TimePeriod}.
+     */
+....................
+    /**
+     * Get the startDateTime of this {@Code TimePeriod}.
+     * @return A LocalDateTime, the startDateTime of this {@Code TimePeriod}.
+     */
+....................
+    /**
+     * Get the endDateTime of this {@Code TimePeriod}.
+     * @return Get the endDateTime of this {@Code TimePeriod}.
+     */
+
+==================================================================[[juliussneezer04]]
+    /**
+     * Abstracted method to create List of tags.
+     *
+     * @return List of tags.
+     * @throws IllegalValueException
+     */
+....................
+    /**
+     * Abstracted method to create List of Student Marks.
+     *
+     * @return List of student marks.
+     * @throws IllegalValueException
+     */
+....................
+    /**
+     * Abstracted method to get list of tutorial groups.
+     *
+     * @return Valid Tutorial Groups.
+     * @throws IllegalValueException
+     */
+....................
+    /**
+     * Abstracted method to add Name.
+     *
+     * @return valid Name.
+     * @throws IllegalValueException
+     */
+....................
+    /**
+     * Abstracted method to add Phone.
+     *
+     * @return valid Phone.
+     * @throws IllegalValueException
+     */
+....................
+    /**
+     * Abstracted method to add Address.
+     *
+     * @return valid Address.
+     * @throws IllegalValueException
+     */
+....................
+    /**
+     * Abstracted method to add Email.
+     *
+     * @return valid Email.
+     * @throws IllegalValueException
+     */
+....................
+    /**
+     * Abstracted method to get ClassCode.
+     *
+     * @return Valid ClassCode.
+     * @throws IllegalValueException
+     */
+....................
+    /**
+     * Abstracted method to create List of tags.
+     *
+     * @return List of tags.
+     * @throws IllegalValueException
+     */
+....................
+    /**
+     * Abstracted method to get ClassCode.
+     *
+     * @return Valid ClassCode.
+     * @throws IllegalValueException
+     */
+....................
+    /**
+     * Abstracted method to add Schedule.
+     *
+     * @return valid Schedule.
+     * @throws IllegalValueException
+     */
+....................
+    /**
+     * Abstracted method to get GroupNumber.
+     *
+     * @return Valid GroupNumber.
+     * @throws IllegalValueException
+     */
+....................
+    /**
+     * Abstracted method to get ClassCode.
+     *
+     * @return Valid ClassCode.
+     * @throws IllegalValueException
+     */
+....................
+    /**
+     * Abstracted method to add GroupType.
+     *
+     * @return valid GroupType.
+     * @throws IllegalValueException
+     */
+
+==================================================================[[choonyongchan]]
+    /**
+     * Add tags for all person in the current list.
+     */
+....................
+    /**
+     * Add tags for one person in the current list.
+     */
+....................
+    /**
+     * Generate a string representation of tags.
+     */
+....................
+    /**
+     * Check if Object is not null.
+     */
+....................
+    /**
+     * Check if Object is null.
+     */
+....................
+    /**
+     * Delete all tags of all person
+     */
+....................
+    /**
+     * Delete all tags of one person
+     */
+....................
+    /**
+     * Delete some tags of all person
+     */
+....................
+    /**
+     * Delete some tags of one person
+     */
+....................
+    /**
+     * Delete tags for all person in the current list.
+     */
+....................
+    /**
+     * Delete tags for one person in the current list.
+     */
+....................
+    /**
+     * Generate a string representation of tags.
+     */
+....................
+    /**
+     * Check if Object is not null.
+     */
+....................
+    /**
+     * Check if Object is null.
+     */
+
+==================================================================[[gok99]]
+    /**
+     * Execute uiConsumer if result has a uiEffect
+     *
+     * @param mainWindow reference to app's ui window
+     */
+....................
+    /**
+     * Add a value associated with the prefix
+     *
+     * @param value value to add
+     * @return list of values after adding
+     */
+....................
+    /**
+     * Number of tags that the person should
+     * have
+     *
+     * @return number of tags matched
+     */
+....................
+    /**
+     * Special tag for CompletionStatus
+     *
+     * @param status completion status
+     */
+....................
+    /**
+     * Completion status with default INCOMPLETE status
+     */
+....................
+    /**
+     * Get array of roles that can edit the tag, based on
+     * whether tag is supervisor only
+     *
+     * @param isSupervisorOnly true if tag is supervisor-only
+     * @return array of roles
+     */
+....................
+    /**
+     * Set the value of the tag
+     */
+....................
+    /**
+     * Get tag's value
+     *
+     * @return tag value
+     */
+....................
+    /**
+     * Find tag in a set with given tagName
+     *
+     * @param tagSet tag set to search in
+     * @param tagName tag name to find
+     * @return tag found (potentially empty)
+     */
+....................
+    /**
+     * Get command box text
+     *
+     * @return command box text
+     */
+....................
+    /**
+     * Set the content of command box
+     *
+     * @param text text to set
+     */
+....................
+    /**
+     * Set caret position of CommandBox
+     *
+     * @param position position of caret
+     */
+
+==================================================================[[hmanhduc2k]]
+    /**
+     * assert that there is no other argument in the keywords
+     * @param arguments arguments
+     * @throws ParseException if the arguments are non-empty
+     */
+....................
+    /**
+     * Visualize assessment score of student
+     * @return assessment score
+     */
+....................
+    /**
+     * Get attendance status of a specific session number
+     * @param sessionNumber to be retrieve from
+     * @return attendance status
+     */
+....................
+    /**
+     * Get participation Score of student
+     * @param sessionNumber session number in need to retrieve information
+     * @return participation mark
+     */
+....................
+    /**
+     * Visualize studio participation and attendance for view
+     * @return studio record in complete
+     */
+....................
+    /**
+     * Create an application Menu for Academy Directory
+     * @param commandExecutor command executor
+     */
+....................
+    /**
+     * Set the help message to be put on the Help Window
+     * @param helpMessage of a command
+     */
+....................
+    /**
+     * Wrap the given Help Message in a Markdown-supported view
+     * @param helpMessage of a command
+     */
+....................
+    /**
+     * Wrap the given Help Message Markdown view in a container
+     * @param markdownView wrapper of help message
+     */
+....................
+    /**
+     * Set visualizer by adding creator inside the container.
+     * @param creator creator
+     */
+....................
+    /**
+     * Handle type of AdditionalView being passed inside AD
+     * @param additionalViewModel additional View model
+     */
+....................
+    /**
+     * View Creator for Student Detailed Information
+     * @param additionalInfo information to be passed in
+     */
+
+==================================================================[[DonnyS57]]
+    /**
+     * Method to edit the client's name.
+     * @param newName new name for the client.
+     */
+....................
+    /**
+     * Method to edit the client's phone number.
+     * @param newPhone new phone number for the client.
+     */
+....................
+    /**
+     * Method to edit the client's email.
+     * @param newEmail new email for the client.
+     */
+....................
+    /**
+     * Method to edit the client's address.
+     * @param newAddress new address for the client.
+     */
+....................
+    /**
+     * Method to edit the client's notes.
+     * @param newNotes new notes for the client.
+     */
+....................
+    /**
+     * Method to edit the client's policies.
+     * @param newPolicies new policies for the client.
+     */
+....................
+    /**
+     * Method to edit the client's liabilities.
+     * @param newLiabilities new liabilities for the client.
+     */
+....................
+    /**
+     * Method to edit the client's assets.
+     * @param newAssets new assets for the client.
+     */
+....................
+    /**
+     * The append command used to add a new policy associated with the client.
+     * @param personAdapter the client being edited.
+     * @param policy the new policy being added.
+     */
+....................
+    /**
+     * The append command used to add a new liability associated with the client.
+     * @param personAdapter the client being edited.
+     * @param liability the new liability being added.
+     */
+....................
+    /**
+     * The append command used to add a new asset associated with the client.
+     * @param personAdapter the client being edited.
+     * @param asset the new asset being added.
+     */
+
+==================================================================[[Chesterwongz]]
+    /**
+     * Parse commands that only have 1 command word and no arguments
+     */
+....................
+    /**
+     * Check if any person field is null, which means that the JSON isn't valid.
+     * !!! Make this check before doing anything else in {@code toModelType} !!!
+     *
+     * @throws IllegalValueException If any person field is null.
+     */
+....................
+    /**
+     * Display the day page of the calendar interface
+     */
+....................
+    /**
+     * Display the week page of the calendar interface
+     */
+....................
+    /**
+     * Display the month page of the calendar interface
+     */
+....................
+    /**
+     * Display the year page of the calendar interface
+     */
+....................
+    /**
+     * initialise {@code CommandBox} key press event handlers.
+     *
+     * @param commandBox The {@code MainWindow}'s {@code CommandBox}
+     */
+....................
+    /**
+     * Go next in the calendar.
+     */
+....................
+    /**
+     * Go to today in the calendar.
+     */
+....................
+    /**
+     * Go back in the calendar.
+     */
+
+==================================================================[[tanhuakun]]
+    /**
+     * Local date time parser
+     * @param str string to parse, it will be trimmed
+     * @return LocalDateTime represented by string
+     * @throws ParseException if date_time_format is not valid
+     */
+....................
+    /**
+     * Immutable way of updating the assigned person ids
+     *
+     * @param ids the new person ids
+     * @return new Group instance with the updated assigned person id list
+     */
+....................
+    /**
+     * Check if any lessons in a list overlaps
+     * @param toCheck List to check
+     * @return true if any lessons in the list overlaps
+     */
+....................
+    /**
+     * Get lessons in a readonly format
+     * @return lessons in a readonly list
+     */
+....................
+    /**
+     * Immutable way of adding an exam
+     * @param e exam to add
+     * @return Person with exam added
+     */
+....................
+    /**
+     * Immutable way of removing an exam
+     * @param index of exam to remove
+     * @return Person with examed removed
+     * @throws IndexOutOfBoundsException if specified index is out of bounds
+     */
+....................
+    /**
+     * Remove the group id from the person.
+     * @param id to remove.
+     * @return new Person with id removed.
+     */
+....................
+    /**
+     * Update all person related details
+     * @param personWithDetails to update
+     */
+....................
+    /**
+     * Update all group related details
+     * @param personGroups to update
+     */
+
+==================================================================[[Py0000]]
+    /**
+     * Construct for an {@code AppointmentCommand}
+     *
+     * @param index index of the person in the filtered person list to add appointment
+     * @param appointment appointment scheduled with the person
+     */
+....................
+    /**
+     * Construct for an {@code DeleteAppointmentCommand}
+     *
+     * @param index index of the person in the filtered person list to delete the appointment
+     * @param appointment appointment scheduled with the person
+     */
+....................
+    /**
+     * Construct for an {@code EditAppointmentCommand}
+     *
+     * @param index index of the person in the filtered person list to edit the appointment
+     * @param editAppointmentDescriptor details of appointment to edit with
+     */
+....................
+    /**
+     * Construct for an {@code MarkAppointmentCommand}
+     *
+     * @param index index of the person in the filtered person list to mark the appointment as completed
+     * @param appointment the existing appointment that has been completed
+     */
+....................
+    /**
+     * Construct for an {@code UnmarkAppointmentCommand}
+     *
+     * @param index index of the person in the filtered person list to mark the appointment as completed
+     * @param appointment the existing appointment that has been marked completed
+     */
+....................
+    /**
+     * Check if appointment has been scheduled with this contact and modify the displayed header.
+     * If appointment is scheduled, appointment header remains as "Upcoming Appointment"
+     * and adds "Date: " indicator before the specified date.
+     * If appointment is not scheduled yet, appointment header will show "No Appointment Scheduled yet"
+     * and no date detail is shown.
+     *
+     * @param date The date data retrieved.
+     * @return A String representing the date data if it is present.
+     */
+....................
+    /**
+     * Check if appointment has been scheduled with this contact and if time and venue data are present.
+     * If appointment is scheduled and time and/or venue data is present, add the header before the data.
+     * If appointment is scheduled and time and/or venue data is not present,
+     * display a '-' to indicate that the data is missing.
+     * If appointment is not scheduled, hides the time and venue field as it is not supposed to be there.
+     *
+     * @param text The time/venue data retrieved.
+     * @param header Either "Time " or "Venue: "
+     * @param date The date data retrieved.
+     * @return A String representing the data if it is present.
+     */
+
+==================================================================[[Imerbear]]
+    /**
+     * A method that opens either user guide or command summary in the user's default browser depending on
+     * the input {@code type}.
+     * When type == 1, user guide will be attempted to be opened.
+     * When type == 2, command summary will be attempted to be opened.
+     * @param type an int that determines the page to be opened.
+     */
+....................
+    /**
+     * Method to access InputHistory Object.
+     */
+....................
+    /**
+     * Used to determine if currentIndex is not pointing to the bottom of history.
+     * @return a Boolean on whether the current index is not equal to 0.
+     */
+....................
+    /**
+     * Used to determine if currentIndex is not pointing to the top of history.
+     * @return a Boolean on whether the current index is less than size of history - 1.
+     */
+....................
+    /**
+     * Used to determine if history is empty
+     * @return a Boolean on whether history is empty.
+     */
+....................
+    /**
+     * Used to determine if currentIndex is pointing to the largest index + 1
+     * @return a Boolean on whether the currentIndex is equal to the size of the history.
+     */
+....................
+    /**
+     * Used to reset the singleton object to its original state.
+     */
+
+==================================================================[[Gabau]]
+    /**
+     * Obtain the total salary of every staff in the input model.
+     *
+     * @param staffs The staffs to get the total salary from.
+     * @return The total salary.
+     */
+....................
+    /**
+     * Obtain the total worktime of every staff in the input model.
+     *
+     * @param staffs The staffs to get the work time from.
+     * @return the total work time in hours.
+     */
+....................
+    /**
+     * Default recurrence period for test cases.
+     *
+     */
+....................
+    /**
+     * Print result for viewSchedule command.
+     *
+     */
+....................
+    /**
+     * Add input fields to field set.
+     * @param fieldSet The field set to add to.
+     * @param fields The fields to add.
+     */
+....................
+    /**
+     * A method to get the working hours of {@code this} during {@code Period period}.
+     *
+     * @param period The period to get the working hours over.
+     * @return The total working hours over this period.
+     */
+....................
+    /**
+     * Translate a string into a Role enum if the string matches any Role values except for norole.
+     * Trims string.
+     * @param string String to be translated.
+     * @return The translated Role if the string is valid.
+     * @throws IllegalArgumentException if the string is invalid.
+     */
+
+==================================================================[[Amadeus-Winarto]]
+    /**
+     * Construct a StageArea for version control purposes. Objects staged onto stageArea can be saved to disk
+     * @param vcObjects Version Control objects to be saved to disk
+     */
+....................
+    /**
+     * Find a label on disk based on name.
+     * @param labelName Hash of the commit saved in disk
+     * @return Label object of the given hash
+     */
+....................
+    /**
+     * Retrieve all the ancestors of the current Commit object
+     * @return ancestors of current commit object, including the current given Commit object
+     */
+....................
+    /**
+     * Retrieve all the ancestors of the current Commit object, up to an end Commit object. If end Commit object is an
+     * ancestor, then all Commit objects up to but excluding the end Commit object will be included. Otherwise,
+     * all ancestor Commit objects are returned.
+     * @param endExclusive end Commit object
+     * @return ancestors of the current commit object, including current Commit object but excluding the end Commit
+     */
+....................
+    /**
+     * Return the lowest common ancestor
+     * @param otherCommit Other Commit object
+     * @return Lowest common ancestor of both commit objects.
+     */
+....................
+    /**
+     * Return the ancestor that is the furthest away, limited by the given end Commit.
+     * @param endExclusive Commit object which limits the search
+     * @return furthest ancestor of queriedCommit but is child of endExclusive
+     */
+....................
+    /**
+     * Regenerate the files following the mapping defined in the current Tree object. Will overwrite destination file
+     * if it exists.
+     * @throws IOException if unable to regenerate files
+     */
+
+==================================================================[[Kimowarui]]
+    /**
+     * Clear all items in internalList of History.
+     */
+....................
+    /**
+     * Align the Ui theme of report window with main window.
+     */
+....................
+    /**
+     * Initialize inner parts.
+     */
+....................
+    /**
+     * Initialize inner parts.
+     */
+....................
+    /**
+     * Switch tab based on command flag.
+     */
+....................
+    /**
+     * Initialize inner parts.
+     */
+
+==================================================================[[ramapriyan912001]]
+    /**
+     * Pair helper class for calculatepayments class
+     * @param surplus double
+     * @param person person
+     */
+....................
+    /**
+     * Intermediate class to store expense maps in json format
+     * @param person person to whom expenditure is attached.
+     * @param expenditure expenditure attached to person.
+     */
+....................
+    /**
+     * Get group object from internal list by group name.
+     * @param groupName name of group to find from list.
+     * @return group object from internal list.
+     */
+....................
+    /**
+     * Payment object represents transactions to be made to balance expenses.
+     * @param payer person to pay amount
+     * @param payee person to be paid amount
+     * @param cost amount to pay
+     */
+....................
+    /**
+     * List of payments.
+     * @param group group from which payments are generated.
+     */
+....................
+    /**
+     * Convert a map of expenses between people and costs to a list of jsonAdaptedIndividualAmounts
+     * @param expenseMap
+     * @return
+     */
+
+==================================================================[[hernpiblo]]
+    /**
+     * Check if {@code table} exists in the database
+     */
+....................
+    /**
+     * Check if {@code reservation} exists in the database
+     */
+....................
+    /**
+     * Return the backing list as an unmodifiable {@code ObservableList}
+     */
+....................
+    /**
+     * Compare this table size with another table size. If equal, then compare their table ID.
+     * @param other other table to compare to
+     * @return positive integer if this table size is bigger than the other table being compared to, or if equal size,
+     * positive integer if this table ID is bigger than the other
+     */
+....................
+    /**
+     * Return the backing list as an unmodifiable {@code ObservableList}
+     */
+....................
+    /**
+     * Return the backing list as an unmodifiable {@code ObservableList}
+     */
+
+==================================================================[[eeliana]]
+    /**
+     * Return a string representation of all the lessons in the set.
+     *
+     * @param lessons Set of lessons.
+     * @return String representation of the lessons in the set.
+     */
+....................
+    /**
+     * Format state as text for viewing.
+     */
+....................
+    /**
+     * Get the lesson timing details in String.
+     *
+     * @return String representation for time fields for the Lesson.
+     */
+....................
+    /**
+     * Check if the two lessons have overlapping date ranges.
+     *
+     * @param other Other Lesson to compare to.
+     * @return True if the date ranges overlap; false if otherwise.
+     */
+....................
+    /**
+     * Bring PersonGridPanel to top of the stack's child list.
+     *
+     * @param student Selected student to view.
+     * @param lessons Lessons of the student.
+     */
+....................
+    /**
+     * Set the children of the panels.
+     */
+
+==================================================================[[nicole-luo-exe]]
+    /**
+     * Check if entered names are valid and match the casing of the name to be the same as elderly name
+     * in NurseyBook's elderly list
+     * @param model
+     * @throws CommandException if some elderly names entered are not found in NurseyBook
+     */
+....................
+    /**
+     * Check if entered names are valid and match the casing of the name to be the same as elderly name
+     * in NurseyBook's elderly list
+     * @param model
+     * @throws CommandException if some elderly names entered are not found in NurseyBook
+     */
+....................
+    /**
+     * Recurring tasks' DateTime changes to its next occurrence once its previous DateTime has arrived/passed.
+     * This functions updates recurring tasks' DateTime as needed at the current time.
+     * @see UniqueTaskList#updateRecurringDates()
+     */
+....................
+    /**
+     * Check if tasks' overdue status is correct when comparing to the current time and update them accordingly.
+     * @see UniqueTaskList#updateOverdueStatuses()
+     */
+....................
+    /**
+     * Case-sensitive version of
+     * @see UniqueElderlyList#hasElderly(Name)
+     */
+....................
+    /**
+     * Update the dates of all recurring tasks if their previous date/time has passed.
+     */
+
+==================================================================[[charliemoweng]]
+    /**
+     * A helper method that finds a module from a UniqueModuleList modules according to module name.
+     */
+....................
+    /**
+     * A helper method that finds a student from a UniqueStudentList students according to student ID.
+     */
+....................
+    /**
+     * A helper method that finds a task from a UniqueTaskList according to task ID.
+     */
+....................
+    /**
+     * Set a Task as completed.
+     */
+....................
+    /**
+     * Set a Task as not completed.
+     */
+
+==================================================================[[simonjulianl]]
+    /**
+     * Initialize the folder.
+     */
+....................
+    /**
+     * Remove the activity based on the id.
+     * Therefore, regardless whether the activity has different titles/fields,
+     * as long as the id is the same, it would be treated as equal.
+     */
+....................
+    /**
+     * {@inheritDoc}
+     *
+     * @param id Integer from 1 to 999
+     */
+....................
+    /**
+     * {@inheritDoc}
+     *
+     * @param id a string of format "PDDD", where "P" is an alphabetic character and "D" is a decimal number
+     */
+....................
+    /**
+     * Check whether the description contains one of the terms (case-insensitive).
+     *
+     * @param terms varargs String.
+     * @return true if text contains term.
+     */
+
+==================================================================[[marcuspeh]]
+    /**
+     * Add tags to the group and return a new group with the added tags.
+     *
+     * @param tag Tags to be added.
+     * @return Updated group
+     */
+....................
+    /**
+     * Remove tag from the group and return a new group without the tag.
+     *
+     * @param tag Tag to be removed.
+     * @return Update group without the tag.
+     */
+....................
+    /**
+     * Payment object represents total transaction.
+     * @param person person spending the money
+     * @param cost amount spent
+     */
+....................
+    /**
+     * Set TransactionSummary from the given list to the list of TransactionSummary.
+     *
+     * @param transactionSummary List of TransactionSummary to add.
+     */
+....................
+    /**
+     * Method to toggle the view panel.
+     *
+     * @param uiView type of view panel to change to.
+     */
+
+==================================================================[[NayLin-H99]]
+    /**
+     * Deduct a set of ingredients from the inventory if possible.
+     * Returns true if the deduction is successful, false if otherwise.
+     *
+     * @param baseIngredients the set of {@code BaseIngredient} to deduct from inventory
+     * @return the boolean that indicates the deduction is successful
+     */
+....................
+    /**
+     * Naively deducts quantity of otherIngr from this ingredient.
+     * Returns a {@code double}, disregards of units of {@code Quantity} in this calculation.
+     *
+     * @param otherIngr
+     * @return double (quantity of this ingredient - quantity of otherIngr)
+     */
+....................
+    /**
+     * Update the ingredient's tags according to its expiry date.
+     * "expired" tag will be added if the expiry date is after the system's date.
+     * "expiring" tag will be added if the expiring date is within EXPIRING_PERIOD from the expiry date.
+     * Any irrelevant expiry tags will be removed.
+     *
+     * @param ingredient the ingredient to update tags of
+     * @return the same ingredient with updated tags
+     */
+....................
+    /**
+     * Naively deducts quantity of newQuantity from this quantity, with the assumption both have the same units.
+     * Returns a {@code double}, regardless of units of {@code Quantity}.
+     *
+     * @param newQuantity to be compared to
+     * @return double value of (quantity - newQuantity)
+     */xx
+....................
+    /**
+     * Convert quantity of ingredients units' (if any) to standard units.
+     *
+     * @param quantity the quantity of ingredients with or without units
+     * @return the string representation with units converted to standardised units
+     */
+
+==================================================================[[Joel-Sung]]
+    /**
+     * Create an Event with no participants.
+     *
+     * @param name Event name
+     * @param date Event date
+     * @param time Event time
+     */
+....................
+    /**
+     * Check if date input is valid.
+     *
+     * @param date Date input
+     * @return True if valid; false if invalid.
+     */
+....................
+    /**
+     * Return the event date in the Input format.
+     *
+     * @return date in Input format
+     */
+....................
+    /**
+     * Check if time input is valid.
+     *
+     * @param time Time input
+     * @return True if valid; false if invalid.
+     */
+....................
+    /**
+     * Return the event time in the Input format.
+     *
+     * @return time in Input format
+     */
+
+==================================================================[[idgrr]]
+    /**
+     * Display details without headers. If field is empty, field will be an empty string
+     */
+....................
+    /**
+     * String array with headers in the correct order
+     */
+....................
+    /**
+     * The filepath the program expects the csv file to be
+     * @return
+     */
+....................
+    /**
+     * getting the user setting for excel import
+     *
+     */
+....................
+    /**
+     * getting the user setting for excel import
+     *
+     */
+
+==================================================================[[LeopardMerkava]]
+    /**
+     * Concatenate "s" at the back of the string if size is bigger than 1.
+     * @param string singular form
+     * @param size of list
+     * @return singular or plural form of the string given
+     */
+....................
+    /**
+     * Add a command to current cache. Reset index to the end of cache.
+     * Deletes the first half if the size of cache reaches 50;
+     * @param command Command to add to cache
+     */
+....................
+    /**
+     * Get the "previous" command entered with respect to current pointer. If there is no last command, returns
+     * the current command instead.
+     * @return Last entered command String
+     */
+....................
+    /**
+     * Get the "next" command entered with respect to current pointer. If there is no next command, returns
+     * empty string instead.
+     * @return Last entered command String
+     */
+....................
+    /**
+     * Reset the current cache.
+     * Used for testing.
+     */
+
+==================================================================[[zhenxuantan]]
+    /**
+     * Comparator for the task's description.
+     * @param otherTask the otherTask
+     * @return an integer for comparison
+     */
+....................
+    /**
+     * Comparator for the task's date.
+     * @param otherTask the otherTask
+     * @return an integer for comparison and ensure that dateless tasks are always after tasks with dates
+     */
+....................
+    /**
+     * Comparator for the task's date.
+     * @param otherTask the otherTask
+     * @return an integer for comparison and ensure that dateless tasks are always after tasks with dates
+     */
+....................
+    /**
+     * Comparator for the task's priority.
+     * @param otherTask the otherTask
+     * @return an integer for comparison
+     */
+....................
+    /**
+     * Comparator for the task's group.
+     * @param otherTask the otherTask
+     * @return an integer for comparison
+     */
+
+==================================================================[[jaredlhf]]
+    /**
+     * Parse a {@code String fileName} into a {@code String fileName} for ExportCommand.
+     * Leading and trailing whitespaces will be trimmed.
+     * Ensures that fileName is a single word with no whitespace.
+     *
+     * @throws ParseException if the given {@code information} is invalid.
+     */
+....................
+    /**
+     * Parse a {@code String fileName} into a {@code String fileName} for ImportCommand.
+     * Leading and trailing whitespaces will be trimmed.
+     * Ensures that fileName is a single word with no whitespace.
+     *
+     * @throws ParseException if the given {@code information} is invalid.
+     */
+....................
+    /**
+     * Parse a {@code String field} into a {@code String field} for SortPersonCommand.
+     * Leading and trailing whitespaces will be trimmed.
+     * Ensures that field is valid.
+     *
+     * @throws ParseException if the given {@code information} is invalid.
+     */
+....................
+    /**
+     * Parse a {@code String field} into a {@code String field} for SortEventCommand.
+     * Leading and trailing whitespaces will be trimmed.
+     * Ensures that field is valid.
+     *
+     * @throws ParseException if the given {@code information} is invalid.
+     */
+....................
+    /**
+     * Parse a {@code String order} into a {@code String order} for SortCommand.
+     * Leading and trailing whitespaces will be trimmed.
+     * Ensures that field is valid.
+     *
+     * @throws ParseException if the given {@code information} is invalid.
+     */
+
+==================================================================[[jianoway]]
+    /**
+     * Return a String representation of the respective sort executed.
+     * @return A String representation of the sort executed.
+     */
+....................
+    /**
+     * Replace this Attendance's boolean array with the given boolean array
+     * @param boolArr The new boolean array
+     */
+....................
+    /**
+     * Convert the boolean to the formatted String representation of a single session's attendance.
+     * @param attendanceStatus Boolean of attendance
+     * @param session The session index
+     */
+....................
+    /**
+     * Replace this Attendance's boolean array with the given boolean array
+     * @param intArr The new boolean array
+     */
+....................
+    /**
+     * Convert the boolean to the formatted String representation of a single session's attendance.
+     * @param participationCount
+     */
+
+==================================================================[[angnobel]]
+    /**
+     * If any field is provided.
+     * @return if any field is provided.
+     */
+....................
+    /**
+     * If any field is provided.
+     * @return if any field is provided.
+     */
+....................
+    /**
+     * Return a String representation of Tags without '[', ']' and ','
+     */
+....................
+    /**
+     * Return a String representation of Positions without '[', ']' and ','
+     */
+....................
+    /**
+     * If any field is provided.
+     * @return if any field is provided.
+     */
+
+==================================================================[[bernarduskrishna]]
+    /**
+     * Return a string message if an item requested exceeds count in inventory.
+     * @param item item requested.
+     * @param countRequested count requested.
+     * @param countInventory count in inventory.
+     * @return the string representation.
+     */
+....................
+    /**
+     * Reinitialise bookKeeping.
+     */
+....................
+    /**
+     * set bookKeeping.
+     * @param bookKeeping the bookKeeping it will be set to.
+     */
+....................
+    /**
+     * Change an Item to the JsonAdapted version.
+     * @param source the Item to be converted.
+     */
+
+==================================================================[[junghon3709]]
+    /**
+     * Get the string representation of the content to copy from
+     *
+     * @param personList person list to copy from
+     * @return the string representation
+     */
+....................
+    /**
+     * Get the string representation of the phone content to copy from
+     *
+     * @param personList the person list to copy from
+     * @return the string representation
+     */
+....................
+    /**
+     * Get the string representation of the email content to copy from
+     *
+     * @param personList the person list to copy from
+     * @return the string representation
+     */
+....................
+    /**
+     * Get the string representation of the name content to copy from
+     *
+     * @param personList the person list to copy from
+     * @return the string representation
+     */
+
+==================================================================[[bryanwee023]]
+    /**
+     * Sort items in the inventory using the given {@code comparator}
+     */
+....................
+    /**
+     * Set {@code toDisplay} as the new source.
+     */
+....................
+    /**
+     * Set {@code toDisplay} as the new source.
+     */
+....................
+    /**
+     * Construct an {@code ItemDescriptor} that corresponds with the given {@code Item}
+     */
+
+==================================================================[[pss-coder]]
+    /**
+     * Display address only if there is address about {@code Person} friend.
+     */
+....................
+    /**
+     * Display description only if there is description about {@code Person} friend.
+     */
+....................
+    /**
+     * Display telegram info only if {@code Person} friend tele handle is given.
+     */
+....................
+    /**
+     * Update friend's reminder on checkbox update.
+     *
+     * @see seedu.friendbook.logic.Logic#executeUpdateReminder(Person, Person)
+     *
+     */
+
+==================================================================[[IceWizard4902]]
+    /**
+     * Get the beginning index of the specified range.
+     *
+     * @return The beginning index
+     */
+....................
+    /**
+     * Get the ending index of the specified range.
+     *
+     * @return The ending index
+     */
+....................
+    /**
+     * Get the command's flag.
+     *
+     * @return The command's flag
+     */
+....................
+    /**
+     * Get the command's operation mode.
+     *
+     * @return The command's operation mode
+     */
+
+==================================================================[[beefham]]
+    /**
+     * Used for testing purposes to allow comparison of the predicates.
+     * @return The Predicate belonging to this FindCommand.
+     */
+....................
+    /**
+     * Used for parsing the input given by the user for finding with respect to overtime.
+     *
+     * @param input A string describing the condition for the overtime of the person.
+     * @return A Predicate which checks if the person passes the given condition as described in the input.
+     */
+....................
+    /**
+     * Used for parsing the input given by the user for finding with respect to leaves.
+     *
+     * @param input A string describing the condition for the overtime of the person.
+     * @return A Predicate which checks if the person passes the given condition as described in the input.
+     */
+....................
+    /**
+     * Used for parsing the input given by the user for finding with respect to leaves.
+     *
+     * @param input A string describing the condition for the overtime of the person.
+     * @return A Predicate which checks if the person passes the given condition as described in the input.
+     */
+
+==================================================================[[xiangjunn]]
+    /**
+     * Update the list of contacts and list of events in their respective UUID map.
+     */
+....................
+    /**
+     * Remove all the contents of this list.
+     */
+....................
+    /**
+     * Update the UUID map in contacts.
+     */
+....................
+    /**
+     * Update the UUID map in events.
+     */
+
+==================================================================[[Samuel-bit-prog]]
+    /**
+     * Retrieve the name of the data.
+     *
+     * @return name of the data
+     */
+....................
+    /**
+     * Get the participants of the event.
+     *
+     * @return an immutable set of participants, which throws {@code UnsupportedOperationException}
+     * if modification is attempted
+     */
+....................
+    /**
+     * Mark the absence of a set of members.
+     *
+     * @param members to be marked as absent
+     */
+....................
+    /**
+     * Confirm if the list contains an event
+     *
+     * @param toCheck is the event to check for
+     * @return true if the list contains an equivalent event as the given argument
+     */
+
+==================================================================[[kevinmingtarja]]
+    /**
+     * Format state as text for viewing.
+     */
+....................
+    /**
+     * Format state as text for viewing.
+     */
+....................
+    /**
+     * Format statistics as text for viewing.
+     */
+....................
+    /**
+     * Clear chart from previous commands.
+     */
+
+==================================================================[[phuccuongngo99]]
+    /**
+     * Function to make a hashmap containing a list of grades per assessment
+     * @param studentList List of students in the classd
+     * @return linked hashmap to maintain the order of printing
+     */
+....................
+    /**
+     * If a value is present, returns the value, otherwise throws
+     * {@code NoSuchElementException}.
+     *
+     * @apiNote
+     * The preferred alternative to this method is {@link #orElseThrow()}.
+     *
+     * @return the non-{@code null} value described by this {@code AdditionalInfo}
+     * @throws NoSuchElementException if no value is present
+     */
+....................
+    /**
+     * If a value is present, returns {@code true}, otherwise {@code false}.
+     *
+     * @return {@code true} if a value is present, otherwise {@code false}
+     */
+....................
+    /**
+     * If a value is  not present, returns {@code true}, otherwise
+     * {@code false}.
+     *
+     * @return  {@code true} if a value is not present, otherwise {@code false}
+     */
+
+==================================================================[[limdanqi]]
+    /**
+     * Format state as text for viewing.
+     */
+....................
+    /**
+     * Generate a Label that has an accent colour based on its contents.
+     */
+....................
+    /**
+     * Given a String tagName, hash it to return an accent colour from 0-5.
+     * Used in some themes.
+     */
+....................
+    /**
+     * Generate a Label that has an accent colour based on its contents.
+     */
+
+==================================================================[[pcgiang]]
+    /**
+     * Return LocalDateTime of a DateAndTime object
+     */
+....................
+    /**
+     * Get a color for tag
+     * @return color code
+     */
+....................
+    /**
+     * Open contact links in browser
+     */
+....................
+    /**
+     * Open event links in browser.
+     */
+
+==================================================================[[mokdarren]]
+    /**
+     * Ensure non-null and is numeric
+     */
+....................
+    /**
+     * Ensure non-null and is numeric
+     */
+....................
+    /**
+     * Format state as text checking
+     */
+
+==================================================================[[dhshah1]]
+    /**
+     * Used to parse the command word from the user input
+     *
+     * @param userInput full user input string
+     * @return the command word
+     * @throws ParseException if the user input does not conform to the expected format
+     */
+....................
+    /**
+     * Used to parse the arguments from the user input
+     * @param userInput full user input string
+     * @return the arguments of the command
+     * @throws ParseException if the user input does not conform to the expected format
+     */
+....................
+    /**
+     * Mark a Specific Job as incomplete.
+     */
+
+==================================================================[[nujiak]]
+    /**
+     * Convenience method that runs operations through the OperationManager
+     * to allow for undoing and redoing.
+     * @param op operation to be executed
+     */
+....................
+    /**
+     * Convenience method that registers already-executed through the
+     * OperationManager to allow for undoing and redoing
+     * @param beforeState model state before operation was executed
+     * @param afterState model state after operation was executed
+     */
+....................
+    /**
+     * Register an operation without running it. Used for operations which have already
+     * been executed but still requires storing for undo/redo
+     * @param redo operation to be run
+     * @param beforeState state of model before op was executed
+     */
+
+==================================================================[[ziqing26]]
+    /**
+     * Check if the frequency is empty.
+     * @return true if the frequency is empty, otherwise false.
+     */
+....................
+    /**
+     * Get the local date time of last visit.
+     * @return the LocalDateTime of this last visit.
+     */
+....................
+    /**
+     * Get the local date time of visit.
+     * @return the LocalDateTime of this visit.
+     */
+
+==================================================================[[GnohChengYi]]
+    /**
+     * List persons in list panel.
+     */
+....................
+    /**
+     * List tasks in list panel.
+     */
+....................
+    /**
+     * List orders in list panel.
+     */
+
+==================================================================[[limzk126]]
+    /**
+     * If every person's task list is being displayed, the person list used to facilitate
+     * that is returned. Otherwise the person list used for display on the person list panel
+     * is returned.
+     */
+....................
+    /**
+     * If every person's task list is being displayed, the person list used to facilitate
+     * that is returned. Otherwise the person list used for display on the person list panel
+     * is returned.
+     */
+....................
+    /**
+     * {@code extractor} used for listView to detect changes in
+     * {@code isOverdue} and {@code isDueSoon} variables of {@code Task}s.
+     */
+
+==================================================================[[wyrchris]]
+    /**
+     * Return true if {@code filePath} is Json file.
+     */
+....................
+    /**
+     * Create a new Address Book.
+     */
+....................
+    /**
+     * Create a {@code ThemeType} with the given {@code themeName}.
+     */
+
+==================================================================[[yyhangz]]
+    /**
+     * Remove the doctor based on the id.
+     * Therefore, regardless whether the doctor has different fields,
+     * as long as the id is the same, it would be treated as equal.
+     * Removes {@code key} from this {@code AddressBook}.
+     * {@code key} must exist in the address book.
+     */
+....................
+    /**
+     * {@inheritDoc}
+     *
+     * @param id Integer from 1 to 999
+     */
+....................
+    /**
+     * {@inheritDoc}
+     *
+     * @param id a string of format "PDDD", where "P" is an alphabetic character and "D" is a decimal number
+     */
+
+==================================================================[[fullfatwasabi]]
+    /**
+     * Update the Period that represents the week that is displayed on the GUI.
+     *
+     * @param newPeriod new Period being displayed on the GUI.
+     */
+....................
+    /**
+     * Translate a string into a Slot enum if the string matches any Slot values. Trims string.
+     *
+     * @param string String to be translated.
+     * @return The translated Slot if the string is valid, null object otherwise.
+     */
+....................
+    /**
+     * Translate a string into a Status enum if the string matches any Status values. Trims string.
+     *
+     * @param string String to be translated.
+     * @return The translated Status if the string is valid.
+     * @throws IllegalArgumentException if the string is invalid.
+     */
+
+==================================================================[[jeromewjj]]
+    /**
+     * Get an Empty Email.
+     *
+     * @return EMPTY_EMAIL.
+     */
+....................
+    /**
+     * Get an Empty Github.
+     *
+     * @return EMPTY_GITHUB.
+     */
+....................
+    /**
+     * Get an Empty LinkedIn.
+     *
+     * @return EMPTY_LINKEDIN.
+     */
+
+==================================================================[[djiangel]]
+    /**
+     * Sort address book alphabetically.
+     */
+....................
+    /**
+     * Sort organisation list alphabetically
+     */
+....................
+    /**
+     * Sort person list alphabetically
+     */
+
+==================================================================[[bharathcs]]
+    /**
+     * Create a Money object with value and currency as specified.
+     *
+     * @param valueInSmallestUnit integer value of the currency in its smallest unit (e.g. cent)
+     */
+....................
+    /**
+     * Perform addition on Money objects.
+     *
+     * @return result of adding two Money objects of the same currency.
+     * @throws MoneyException if the Money objects involved are of different currencies or
+     *                        results in an ArithmeticError (Integer overflow).
+     */
+....................
+    /**
+     * Perform subtraction on Money objects.
+     *
+     * @return result of adding two Money objects of the same currency.
+     * @throws MoneyException if the Money objects involved are of different currencies or
+     *                        results in an ArithmeticError (Integer overflow).
+     */
+
+==================================================================[[timothywongej]]
+    /**
+     * Format state as text for viewing.
+     */
+....................
+    /**
+     * Format state as text for viewing.
+     */
+....................
+    /**
+     * Format state as text for viewing.
+     */
+
+==================================================================[[LMAOboxhack]]
+    /**
+     * Convenience method to test if an optional object passes a specified filter.
+     * If the object is not present (i.e. Optional.empty), the filter is passed by default.
+     */
+....................
+    /**
+     * Internal method to create a pie chart, given a list of applicants under a single position.
+     */
+
+==================================================================[[yeppog]]
+    /**
+     * Set the current commandTextField text to the input text of the function.
+     * @param text The text to change to.
+     */
+....................
+    /**
+     * Obtain the current content in the TextField.
+     * @return String of the current content.
+     */
+
+==================================================================[[Haozeee]]
+    /**
+     * Switch the UI view to the tab containing the patient's records.
+     */
+....................
+    /**
+     * Switch the UI view to the tab containing the doctor's records.
+     */
+
+==================================================================[[clyveycui]]
+    /**
+     * Parse a {@Code String actionString} into a {@Code Action}.
+     * Leading and trailing whitespaces will be trimmed.
+     * @param actionString string to be parsed
+     * @return a {@Code Action}
+     * @throws ParseException if the given {@code actionString} is invalid.
+     */
+....................
+    /**
+     * Format state as text for viewing.
+     */
+
+==================================================================[[lwlshawn]]
+    /**
+     * Simple check that validates label is not empty string after trimming.
+     */
+....................
+    /**
+     * Simple check that validates date is not empty string after trimming.
+     */
+
+==================================================================[[joenzkimchan]]
+    /**
+     * Parse a {@code String studiedHours} into an {@code StudiedHours}.
+     * Leading and trailing whitespaces will be trimmed.
+     *
+     * @throws ParseException if given {@code studiedHours} is invalid.
+     */
+....................
+    /**
+     * Add spots to a pie chart
+     */
+
+==================================================================[[JunWei3112]]
+    /**
+     * Create the 'add student(s) to lesson(s) feature' section.
+     */
+....................
+    /**
+     * Create the 'delete student(s) from lesson(s) feature' section.
+     */
+
+==================================================================[[chunweii]]
+    /**
+     * For assertion checking.
+     */
+....................
+    /**
+     * Adapted from CalendarFX developer manual.
+     * http://dlsc.com/wp-content/html/calendarfx/manual.html#_quick_start
+     */
+
+==================================================================[[chetwinlow]]
+    /**
+     * Format state as text for viewing.
+     */
+....................
+    /**
+     * Format state as text for viewing.
+     */
+
+==================================================================[[ambroseboo]]
+    /**
+     * Get the day for this current date and return the same day for the current week.
+     * @return Date with the same day as current instance but for the current week.
+     */
+....................
+    /**
+     * Display for show in TaskCard
+     * @return "Recurring: weekly/monthly/yearly"
+     */
+
+==================================================================[[e0543860]]
+    /**
+     * Change the displayed path.
+     */
+....................
+    /**
+     * Hide the displayed path.
+     */
+
+==================================================================[[noobmaster19]]
+    /**
+     * Format state as text for viewing.
+     */
+....................
+    /**
+     * Format state as text for viewing.
+     */
+
+==================================================================[[trash-bin99]]
+    /**
+     * Construct for a {@code RemarkCommand}
+     *
+     * @param index index of the person in the filtered person list to add the tags
+     * @param addTags Tags of the person to be added
+     * @param deleteTags Tags of the person to be deleted
+     */
+....................
+    /**
+     * Create either an instance of a Tag or a PriorityTag depending on the input term.
+     */
+
+==================================================================[[KelvinSoo]]
+    /**
+     * Return the total tasks for the week
+     */
+....................
+    /**
+     * Return the total completed tasks for the week
+     */
+
+==================================================================[[Jeromesyl]]
+    /**
+     * Return true if there is a previous state to restore in the watcherStateList.
+     * @return if undo is possible.
+     */
+....................
+    /**
+     * Return true if there is a previously undone state to restore in the watcherStateList.
+     * @return if redo is possible.
+     */
+
+==================================================================[[NicolasCwy]]
+    /**
+     * Add guest billing details to the PDF document.
+     * Billing details include guest name and room number
+     *
+     * @param doc PDF document to add billing details to.
+     * @param g Guest to bill invoice to.
+     * @param boldFont Bold font used by text.
+     */
+....................
+    /**
+     * Add table containing charges to PDF.
+     *
+     * @param doc PDF document to add invoice table to.
+     * @param g Guest to charge.
+     * @param font Normal font used by text in table.
+     * @param boldFont Bold font used by text in table.
+     */
+
+==================================================================[[leeroy999]]
+    /**
+     * Add a set of members to the event with all attendance initialised as false.
+     *
+     * @param members to be added
+     */
+....................
+    /**
+     * Add a member to the event.
+     *
+     * @param member to be added
+     */
+
+==================================================================[[samyipsh]]
+    /**
+     * Open URL inside User's Desktop Browser.
+     * Assume running platform supports desktop. Use {@link #isDisplayAndBrowseCompatible()} to check.
+     * No validity checks of valid url.
+     *
+     * @param url
+     */
+....................
+    /**
+     * Open fields of specified persons as determined by OpenFieldCommand object
+     * Runs if {@link UserBrowser#isDisplayAndBrowseCompatible()}
+     *
+     * @param model
+     * @throws CommandException
+     */
+
+==================================================================[[ryanpeh]]
+    /**
+     * A UI component that displays the choices of a {@code MultipleChoiceQuestion}
+     */
+....................
+    /**
+     * A UI component that displays the choices of a {@code TrueFalseQuestion}
+     */
+
+==================================================================[[pbthang]]
+    /**
+     * Check if {@code reservation} exists in the database
+     */
+....................
+    /**
+     * Return the backing list as an unmodifiable {@code ObservableList}
+     */
+
+==================================================================[[radiankrisno]]
+    /**
+     * {@inheritDoc}
+     *
+     * @param id Integer from 1 to 999.
+     */
+....................
+    /**
+     * {@inheritDoc}
+     *
+     * @param id a string of format "PDDD", where "P" is an alphabetic character and "D" is a decimal number.
+     */
+
+==================================================================[[vigneshsankariyer1234567890]]
+    /**
+     * Static method that clears the history after stackPointer.
+     * @param original the original HistoryManager
+     * @param <U> the type that is stored by HistoryManager
+     * @return A new HistoryManager that contains the history up to stackPointer.
+     */
+....................
+    /**
+     * Static method that clears the history after stackPointer.
+     * @param original the original HistoryManager
+     * @param <U> the type that is stored by HistoryManager
+     * @return A new HistoryManager that contains the history up to stackPointer.
+     */
+
+==================================================================[[kanjitp]]
+    /**
+     * Encode the given participant to give id.
+     *
+     * @param p participant to encode the id.
+     * @return the id for given participant.
+     */
+....................
+    /**
+     * Convert this Json representation of NextOfKin to NextOfKin object.
+     * @return  NextOfKin object of this JsonAdaptedNextOfKin
+     * @throws IllegalValueException if the given attributes in json fields is illegal
+     */
+
+==================================================================[[alinaleehx]]
+    /**
+     * Update given task as done.
+     * @param task
+     */
+....................
+    /**
+     * Update given done task as not done.
+     * @param task
+     */
+
+==================================================================[[angkoonhwee]]
+    /**
+     * Automatically updates the specific lesson's outstanding fees.
+     *
+     * @param lesson The specific lesson to be updated.
+     * @return Updated lesson with the correct outstanding fees.
+     */
+....................
+    /**
+     * Get the value in Money object such that it can be used for calculations in {@code FeesCalculator}.
+     *
+     * @return Value in Big Decimal.
+     */
+
+==================================================================[[hsiaotingluv]]
+    /**
+     * Sort address book alphabetically.
+     */
+....................
+    /**
+     * Sort list of person based on comparator
+     */
+
+==================================================================[[greyguy21]]
+    /**
+     * Return the note in students.
+     * @return Note object
+     */
+....................
+    /**
+     * Custom {@code ListCell} that displays the graphics of a {@code Assessment} using a {@code AssessmentCard}.
+     */
+
+==================================================================[[Pulpy-y]]
+    /**
+     * Format state as text for viewing.
+     */
+....................
+    /**
+     * Check that experience is an integer or a double with only 0 or 5 behind decimal point.
+     */
+
+==================================================================[[tanqiya]]
+    /**
+     * Add a '.json' to the end of filename if
+     * not included already
+     *
+     * @param path path with or without .json
+     * @return path with .json
+     */
+....................
+    /**
+     * If there is a person with the same Uuid in the list, replace the person with the person being merged.
+     * If the Uuid is not found in the list, add the new person.
+     * @param personToMerge
+     */
+
+==================================================================[[guangxuan]]
+    /**
+     * Construct a CommandPreAction for a command that does not require a file.
+     */
+....................
+    /**
+     * Construct a CommandPreAction for a command that requires a file.
+     */
+
+==================================================================[[Nature711]]
+    /**
+     * Undo the most recent change to the Internship data
+     * @return The previous state of Internship as retrieved from the internalStateList
+     */
+....................
+    /**
+     * Redo the most recent change caused by the undo action
+     * @return The next state of Internship as retrieved from the internalStateList
+     */
+
+==================================================================[[rickyaandrew]]
+    /**
+     * Exception for user who have keyed in invalid time format.
+     *
+     * @param msg is the error message.
+     */
+
+==================================================================[[wangpeialex]]
+    /**
+     * Add an {@code Item} to the order.
+     */
+
+==================================================================[[ZhaoPeiduo]]
+    /**
+     * Get the student at the given index.
+     * The student must not already exist in the list.
+     */
+
+==================================================================[[HangZelin]]
+    /**
+     * Mark a Specific Job to be completed.
+     */
+
+==================================================================[[koh-jx]]
+    /**
+     * Update filters for the task list after any changes to it (CLI or GUI)
+     */
+
+==================================================================[[over-fitted]]
+    /**
+     * Constuctor for Person to create a copy that uses a new counter. Used to update immutable call status.
+     * @param old the previous version of the person.
+     * @param newCallStatus the new counter to be used.
+     */
+
+==================================================================[[zhuoyang125]]
+    /**
+     * Display a warning dialog to the user, with the specified heading
+     * and description.
+     * @return Boolean value of the user's response to proceed with action.
+     */
+
+==================================================================[[nzixuan]]
+    /**
+     * Set the Alias Map of the command.
+     *
+     * @param aliasMap Hashmap of alias in the parser
+     * @return AliasCommand with aliasMap set
+     */
+
+==================================================================[[reddevil1313]]
+    /**
+     * Get a list of all the students.
+     */
+
+==================================================================[[felissaf]]
+    /**
+     * Find a student from the specified module.
+     *
+     * @param module The module the student will be searched from.
+     * @param model The TAB model.
+     * @throws CommandException Exception thrown when student is not found.
+     */
+
+==================================================================[[Chen-Yiyang]]
+    /**
+     * Format {@code storedDateString} into a {@code displayedDateString} to be displayed on Person Card.
+     *
+     * @param storedDateString datetime string of pattern dd yyyy-MM-dd HH:mm
+     * @return displayedDateString formatted datetime string of pattern dd LLL yyyy HH:mm
+     */
+
+==================================================================[[huyuxin0429]]
+    /**
+     * A looser definition of equality where two prescriptions are considered the same if they have the same medicine
+     * name.
+     * @param p The other prescription
+     * @return Boolean indicating if the two prescriptions have the same name.
+     */
+
+==================================================================[[huisthat]]
+    /**
+     * Format state as text for viewing.
+     */
+
+==================================================================[[yourally2]]
+    /**
+     * Visually selects the tuition class and shows the Student List associated to it.
+     */
+
+==================================================================[[amzhy]]
+    /**
+     * Return updated Tuition class after removing student.
+     *
+     * @param student the student to be removed.
+     * @return Updated tuition class.
+     */
+
+==================================================================[[lizchow]]
+    /**
+     * Construct a predicate with the given {@code minPrice} and {@code maxPrice}.
+     * {@code minPrice} and {@code maxPrice} may be {@code null}.
+     */
+
+==================================================================[[dannylty]]
+    /**
+     * Utility function to check each item between two iterators is equal.
+     */
+
+==================================================================[[bklimey]]
+    /**
+     * Parse platform to a standardized form
+     */
+
+==================================================================[[muhammad-khair]]
+    /**
+     * Add student to the lesson instance.
+     */
+
+==================================================================[[Leofeng10]]
+    /**
+     * Display a reminder to tutor about today tuition classes
+     */
+
+==================================================================[[IrvingHe000]]
+    /**
+     * Initialize schedule object.
+     */
+
+==================================================================[[fans2619]]
+    /**
+     * {@code GeneralIndex} can only be created by calling {@link GeneralIndex#fromZeroBased(int)} or
+     * {@link GeneralIndex#fromOneBased(int)}.
+     */
+
+==================================================================[[cedricongjh]]
+    /**
+     * Find a {@code Choice} by its title
+     * @param title A String representation of title of the choice
+     * @return The {@code Choice} whose title equals {@code title} or null if that choice does not exist
+     */
+
+==================================================================[[jackgugz]]
+    /**
+     * Format state as text for viewing.
+     */
+
+==================================================================[[Th-429B]]
+    /**
+     * An UI component that contains the set of tags and the icon image.
+     * @param tagSet The Set of Tags.
+     * @param img The image of the icon.
+     */
+
+==================================================================[[jason-ng-zq99]]
+    /**
+     * Format state as text for viewing.
+     */
+
+==================================================================[[cyyeu]]
+    /**
+     * A less strct equivalent relation for names, where names can be equal where
+     * 1. Case-sensitivity is ignored.
+     * 2. Whitespaces between words in their names are ignored.
+     * @param other The other name.
+     * @return Returns true if the above condition is met.
+     */
+
+==================================================================[[qreoct]]
+    /**
+     * Format state as text for viewing.
+     */
+
+==================================================================[[wanyu-l]]
+    /**
+     * Format state as text for viewing.
+     */
+
+==================================================================[[Cyn7hius]]
+    /**
+     * Capitalise the start of each word in the args
+     */
+
+==================================================================[[zihaooo9]]
+    /**
+     * @@author zihaooo9-reused
+     * Reused from https://www.baeldung.com/java-check-string-number
+     * with minor modifications
+     *
+     * Returns true if {@code s} represents a Numeric value
+     * e.g. 1, -1, 1.1, 12345678901234567890, ..., {@code Integer.MAX_VALUE} <br>
+     * Will return false for any other non-null string input
+     * @throws NullPointerException if {@code s} is null.
+     */
+
+==================================================================[[seaweediman]]
+    /**
+     * Check if a position in the list is closed.
+     * @param toCheck The position to check.
+     */
+
+==================================================================[[timiditi]]
+    /**
+     * Add an input to the end of the history list.
+     * Does not add input if it is the same String as the last input added.
+     * Resets the pointer to the back of the list.
+     * @param input String to be added to history
+     */
+
+==================================================================[[twothicc]]
+    /**
+     * Format tag name for showing.
+     */
+
+==================================================================[[david-eom]]
+    /**
+     * Pinning-related methods
+     */
+
+==================================================================[[Kangxun]]
+    /**
+     * Format state as text for viewing.
+     */
+
+==================================================================[[CSYGalvin]]
+    /**
+     * Construct a Date instance on the given date
+     * @param date date
+     */
+
+==================================================================[[weichang18]]
+    /**
+     * Capitalise the first character of each part of the name.
+     */
+
+==================================================================[[kevin9foong]]
+    /**
+     * Format state as text for viewing.
+     */
+
+==================================================================[[MarcusTXK]]
+    /**
+     * Command to schedule a friend using the unique FRIEND_ID.
+     *
+     * @param friendId  Id of friend to be scheduled.
+     * @param day       Day to set.
+     * @param startTime Start of timeslot.
+     * @param endTime   End of timeslot.
+     * @param isFree    Is timeslot free.
+     */
+
+==================================================================[[bnjmnt4n]]
+    /**
+     * Construct a new {@code Date} with a given name and value,
+     * by parsing the input string.
+     * @param date The input string to parse.
+     */
+
+==================================================================[[yulonglim]]
+    /**
+     * Utility code to generate column base on student list and column required
+     *
+     * @param columnName name of column to be generated
+     * @param studentList list of student to generate the column for
+     * @return list of string with the student information base on {@code columnName}.
+     */
+
+==================================================================[[cheweejia]]
+    /**
+     * Return a String representation of the collated grades for a particular Assessment.
+     * @param students The students in the AcademyDirectory.
+     * @param assessment The specified Assessment.
+     * @return A String representation of the grades for a particular Assessment.
+     */
+
+==================================================================[[rgbpokka]]
+    /**
+     * Method for debugging
+     */
+
+==================================================================[[TLChicken]]
+    /**
+     * Externally looks like it edits the Student Ids of the Participant object in the Events that this Student
+     * is enrolled in, if this Student's Student Id is being edited. Internally it deletes the old Event
+     * and creates a new Event with the updated Student so that the ObservableList of Events would trigger
+     * an update to GUI.
+     *
+     * @param studentToEdit the Student whose Student Id is being edited.
+     * @param newStudent the new Student which has an edited Student Id.
+     * @param model the Model that the Student is being updated in.
+     */
+
+==================================================================[[softmagnet]]
+    /**
+     * Utility method for testing
+     */
+
+==================================================================[[bernardwan]]
+    /**
+     * Create a DeleteClassCommand with the specified index.
+     * @param index The index of the class to be deleted.
+     */
+
+==================================================================[[SkyBlaise99]]
+    /**
+     * The unit price should contain digits from 0 to 9 only, and optionally '.' for cents.
+     */
+
+==================================================================[[tchiong]]
+    /**
+     * Check if appointmentList contains {@code Appointment}
+     * @return boolean result
+     */
+
+==================================================================[[aryagiat]]
+    /**
+     * Render the panel and show it to the user.
+     * @param panel The panel to be shown.
+     */
+
+==================================================================[[qinguorui2001]]
+    /**
+     * * Returns true if the date and time is valid.
+     */
+
+==================================================================[[nbvannhi]]
+    /**
+     * Get and returns a list of {@code Student} with matching info
+     * as specified in the {@code scoreDescriptor}.
+     */
+
+==================================================================[[CommanderW324]]
+    /**
+     * Fill the table with given hashmap
+     */
+
+==================================================================[[huizhuansam]]
+    /**
+     * Given a long prefix, generates a regex pattern that matches the prefix in a string.
+     */
+
+==================================================================[[EthanWong6362]]
+    /**
+     * Format state as text for viewing.
+     */
+
+==================================================================[[ngchisern]]
+    /**
+     * Format state as text for viewing.
+     */
+
+==================================================================[[neojxuan]]
+    /**
+     * A UI component that displays the choices of a {@code MultipleChoiceQuestion}
+     */
+
+==================================================================[[LiuZhi1an]]
+    /**
+     * Format state as text for viewing.
+     */
+
+==================================================================[[wpinrui]]
+    /**
+     * Convert an InitialStudent to a Student by creating the dependencies to Lesson objects.
+     * At the same time, Student objects are added to the respective Lesson objects.
+     *
+     * @param fullLessonList A list of available lessons in TutorAid
+     * @return The resulting Student object
+     */
+
+==================================================================[[kdeasymoneysniper]]
+    /**
+     * Format state as text for viewing.
+     */
+
+==================================================================[[chowRuiYan]]
+    /**
+     * Refresh the content of time-sensitive UI.
+     */
+
+==================================================================[[luodan01]]
+    /**
+     * Determine top five genres based on the number of animes tagged with the genre
+     * and creates a bar graph accordingly.
+     *
+     * @param genreStats The genre statistics
+     * @return data for the bar chart featuring the top five genres
+     */
+
+==================================================================[[chownces]]
+    /**
+     * Display the answer to the current flashcard in the SlideshowApp.
+     */
+
+==================================================================[[kvihashini]]
+    /**
+     * Update all group related details
+     * @param groupWithDetails to update
+     */
+
+==================================================================[[eezj35]]
+    /**
+     * One field can be null, but not both.
+     */
+
+==================================================================[[mweeruien]]
+    /**
+     * Update the default timing fields based on a LocalTime[] of new Timings.
+     *
+     * @param newTimings a LocalTime[] containing the new timings.
+     */
+
+==================================================================[[czhi-bin]]
+    /**
+     * Parse the user input, if valid, into a Command Word used
+     * internally in the program for the creation of Command objects.
+     *
+     * @param userInput The user input to parse into a command word
+     * @return The matching command word if exists, else null.
+     */
+
+==================================================================[[crypto-code]]
+    /**
+     * Interrupt fab loader thread
+     */
+
+==================================================================[[CraveToCode]]
+    /**
+     * For each task in the TaskList, if it is a real and recurring task, all possible future occurrences of the task
+     * are compared against the given keyDate. If any future task's date matches with the given keyDate,
+     * the future task is added as a ghost task to the TaskList.
+     */
+
+==================================================================[[YeluriKetan]]
+    /**
+     * Format state as text for viewing.
+     */
+
+==================================================================[[houtenteo]]
+    /**
+     * Check header of CSV
+     *
+     * @param header first line of CSV that represents the header
+     * @throws DataConversionException thrown if header does not follow format
+     */
+
+==================================================================[[Tianqi-Zhu]]
+    /**
+     * Oen link in web browser.
+     */
+
+==================================================================[[aishh12]]
+    /**
+     * Set the data in user profile.
+     */
+
+==================================================================[[nicolej2122]]
+    /**
+     * User can view applicant details in Intern Watcher.
+     */
+
+==================================================================[[naranghardik16]]
+    /**
+     *Parses the given {@code String} of arguments in the context of the SortCommand
+     * and returns a SortCommand object for execution.
+     * @throws ParseException if the user input does not conform the expected format
+     */
+
+==================================================================[[Banana3021]]
+    /**
+     * If a person has been deleted, reinstates
+     * the deleted person at the correct index
+     *
+     * @param personList the list of all people
+     * @param index      the former index of the deleted person
+     * @param newPerson  the deleted person
+     * @param model      the model in use
+     */
